@@ -1,7 +1,7 @@
 import { lazy, Suspense } from 'react'
 import { motion } from 'framer-motion'
 import { Link } from 'react-scroll'
-import { FiGithub, FiLinkedin, FiArrowDown } from 'react-icons/fi'
+import { FiGithub, FiLinkedin, FiArrowDown, FiDownload } from 'react-icons/fi'
 import { useTheme } from '../context/ThemeContext'
 import CanvasErrorBoundary from './CanvasErrorBoundary'
 
@@ -81,6 +81,16 @@ export default function Hero() {
                 Contact Me
               </motion.span>
             </Link>
+            <motion.a
+              href="/resume.pdf"
+              download="Aryan_Resume.pdf"
+              whileHover={{ scale: 1.03 }}
+              whileTap={{ scale: 0.98 }}
+              className="apple-btn-secondary flex items-center gap-2"
+            >
+              <FiDownload size={15} />
+              Resume
+            </motion.a>
           </motion.div>
 
           <motion.div variants={item} className="flex items-center gap-5">
