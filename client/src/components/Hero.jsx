@@ -82,7 +82,7 @@ export default function Hero() {
               </motion.span>
             </Link>
             <motion.a
-              href="/resume.pdf"
+              href="/Resume.pdf"
               download="Aryan_Resume.pdf"
               whileHover={{ scale: 1.03 }}
               whileTap={{ scale: 0.98 }}
